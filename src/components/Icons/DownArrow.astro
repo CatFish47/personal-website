@@ -1,0 +1,23 @@
+---
+import theme from "../../json/theme.json";
+export interface Props {
+  width: number;
+  height: number;
+  color: "dark" | "light";
+}
+
+const { width, height, color } = Astro.props as Props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={width}
+  height={height}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke={color === "dark" ? theme.dark : theme.light}
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  ><path d="M6 9l6 6 6-6"></path>
+</svg>

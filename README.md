@@ -1,44 +1,11 @@
-# Welcome to [Astro](https://astro.build)
+# Grant's Website
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+This website was built using the Astro framework due to both a need for a personal website and a want to learn Astro :D
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Color Palette:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- ![#292f36](https://placehold.co/15x15/292f36/292f36.png) `#292F36`
+- ![#4ecdc4](https://placehold.co/15x15/4ecdc4/4ecdc4.png) `#4ECDC4`
+- ![#f7fff7](https://placehold.co/15x15/f7fff7/f7fff7.png) `#F7FFF7`
+- ![#ff6b6b](https://placehold.co/15x15/ff6b6b/ff6b6b.png) `#FF6B6B`
+- ![#ffe66d](https://placehold.co/15x15/ffe66d/ffe66d.png) `#FFE66D`

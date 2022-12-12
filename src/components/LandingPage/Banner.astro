@@ -1,0 +1,34 @@
+---
+import DownArrow from "../Icons/DownArrow.astro";
+---
+
+<div id="banner">
+  <!-- DVD LOGO THAT CHANGES COLOR WHEN IT BOUNCES :D -->
+  <span id="title">Grant Cheng</span>
+  <DownArrow width={48} height={48} color="dark" />
+</div>
+<style>
+  :root {
+    /* --banner-gradient: linear-gradient(
+      0deg,
+      var(--theme-primary),
+      var(--theme-secondary)
+    ); */
+  }
+
+  #banner {
+    width: 100vw;
+    height: 100vh;
+    background: var(--theme-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    color: var(--theme-dark);
+  }
+</style>
