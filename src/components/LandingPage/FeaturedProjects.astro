@@ -1,37 +1,52 @@
 ---
 import ProjectCard from "../ProjectsPage/ProjectCard";
+import { featuredProjects, projects } from "../ProjectsPage/projects";
 import "./section.css";
+
+const test = [1, 2, 3, 4];
 ---
 
 <div class="main-content-alt">
   <span class="section-title">Projects</span>
   <div id="projects">
     {
-      [
-        <ProjectCard
-          id="p1"
-          title="Example Project"
-          body="This is an example project"
-          client:load
-        />,
-        <ProjectCard
-          id="p2"
-          title="Example Project 2"
-          body="This is an example project"
-          client:load
-        />,
-        <ProjectCard
-          id="p3"
-          title="Example Project 3"
-          body="This is an example project"
-          client:load
-        />,
-      ]
+      featuredProjects.map((proj, index) => {
+        return <ProjectCard id={`p${index}`} project={proj} client:load />;
+      })
     }
   </div>
 </div>
 <style>
+  /* XS devices (portrait phones, below 576px) */
   #projects {
     padding: 1rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    #projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {
+    #projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    #projects {
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    #projects {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 </style>

@@ -10,6 +10,7 @@
   justify-content: center;
   z-index: 100;
   opacity: 1 !important;
+  padding: 0 !important;
 }
 
 .ModalWindow {

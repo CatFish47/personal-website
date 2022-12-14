@@ -1,15 +1,16 @@
 import { openModalID } from "../../stores/modalStore";
 import ProjectModal from "./ProjectModal";
+import type { Project } from "./projects";
 import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
   id: string;
-  title: string;
-  body: string;
+  project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
-  const { id, title, body } = props;
+  const { id, project } = props;
+  const { name, description } = project;
 
   const onClickCard = () => {
     openModalID.set(id);
@@ -19,12 +20,12 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     <div className={styles.ProjectCard}>
       <div onClick={onClickCard}>
         <h2 className={styles.CardTitle}>
-          {title}
+          {name}
           <span>&#129109;</span>
         </h2>
-        <p className={styles.CardBody}>{body}</p>
+        <p className={styles.CardBody}>{description}</p>
       </div>
-      <ProjectModal id={id} />
+      <ProjectModal id={id} project={project} />
     </div>
   );
 };

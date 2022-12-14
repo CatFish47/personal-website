@@ -1,16 +1,19 @@
 import { useStore } from "@nanostores/react";
 import { openModalID } from "../../stores/modalStore";
 import styles from "./ProjectModal.module.css";
+import type { Project } from "./projects";
 
 interface ProjectModalProps {
   id: string;
+  project: Project;
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = (props) => {
-  const { id } = props;
+  const { id, project } = props;
+  const { name, details, links, image, when } = project;
   const $openModalID = useStore(openModalID);
 
-  const onCloseModal = () => {
+  const handleCloseModal = () => {
     openModalID.set("");
   };
 
@@ -23,20 +26,23 @@ const ProjectModal: React.FC<ProjectModalProps> = (props) => {
       id={id}
       style={{ display: $openModalID === id ? "flex" : "none" }}
       className={styles.ModalBackground}
+      onClick={(e) => {
+        console.log(e);
+      }}
     >
       <div className={styles.ModalWindow}>
         <div className={styles.ModalTitle}>
-          <span>Example Project</span>
+          <span>{name}</span>
         </div>
         <div className={styles.ModalBody}>
           <div className={styles.ModalImage}>
             <img src="portrait-square.jpg" />
           </div>
-          <div className={styles.ModalContent}>Lorem ipsum dolor sit amet.</div>
+          <div className={styles.ModalContent}>{details}</div>
         </div>
         <div className={styles.ModalFooter}>
           <button onClick={onOpenProject}>View Project</button>
-          <button onClick={onCloseModal}>Close</button>
+          <button onClick={handleCloseModal}>Close</button>
         </div>
       </div>
     </div>
