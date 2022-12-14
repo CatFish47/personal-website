@@ -6,27 +6,39 @@ import "./section.css";
   <span class="section-title">About Me</span>
   <div id="bio">
     <img src="/portrait-square.jpg" id="image" />
-    <p>
+    <span>
       Hello! I am a 2nd year at the University of California, San Diego (UCSD)
       majoring in Computer Science and minoring in Japanese Studies. While I
       like testing the waters in different fields of computer science, I have
       interests in software engineering and AI.
-    </p>
+    </span>
   </div>
 </div>
 <style>
   #bio {
     padding: 1rem 0 0 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 
   #image {
-    background-color: gray;
     min-width: 48px;
     min-height: 48px;
-    max-width: 20vw;
+  }
+
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {
+    #bio {
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    #image {
+      min-width: 48px;
+      min-height: 48px;
+      max-width: 20vw;
+    }
   }
 </style>
