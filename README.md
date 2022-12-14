@@ -4,8 +4,9 @@ This website was built using the Astro framework due to both a need for a person
 
 Color Palette:
 
-- ![#292f36](https://placehold.co/15x15/292f36/292f36.png) `#292F36`
-- ![#4ecdc4](https://placehold.co/15x15/4ecdc4/4ecdc4.png) `#4ECDC4`
-- ![#f7fff7](https://placehold.co/15x15/f7fff7/f7fff7.png) `#F7FFF7`
-- ![#ff6b6b](https://placehold.co/15x15/ff6b6b/ff6b6b.png) `#FF6B6B`
-- ![#ffe66d](https://placehold.co/15x15/ffe66d/ffe66d.png) `#FFE66D`
+- ![#0b0c10](https://placehold.co/15x15/0b0c10/0b0c10.png) `#0b0c10`
+- ![#1f2833](https://placehold.co/15x15/1f2833/1f2833.png) `#1f2833`
+- ![#dad1d2](https://placehold.co/15x15/dad1d2/dad1d2.png) `#dad1d2`
+- ![#f3eded](https://placehold.co/15x15/f3eded/f3eded.png) `#f3eded`
+- ![#66fcf1](https://placehold.co/15x15/66fcf1/66fcf1.png) `#66fcf1`
+- ![#45a29e](https://placehold.co/15x15/45a29e/45a29e.png) `#45a29e`
