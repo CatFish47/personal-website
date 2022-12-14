@@ -1,6 +1,6 @@
 # Grant's Website
 
-This website was built using the Astro framework due to both a need for a personal website and a want to learn Astro :D
+This website was built using the Astro framework due to both a need for a personal website and a desire to learn Astro :D
 
 Color Palette:
 

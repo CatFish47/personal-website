@@ -2,10 +2,10 @@
 import "./section.css";
 ---
 
-<div class="main-content">
+<div class="main-content" id="about">
   <span class="section-title">About Me</span>
   <div id="bio">
-    <div id="image"></div>
+    <img src="/portrait-square.jpg" id="image" />
     <p>
       Hello! I am a 2nd year at the University of California, San Diego (UCSD)
       majoring in Computer Science and minoring in Japanese Studies. While I
@@ -20,11 +20,13 @@ import "./section.css";
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
   }
 
   #image {
     background-color: gray;
     min-width: 48px;
     min-height: 48px;
+    max-width: 20vw;
   }
 </style>

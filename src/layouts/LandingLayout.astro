@@ -39,11 +39,18 @@ const { title } = Astro.props as Props;
     --color-bg: hsl(10, 21%, 95%);
     --color-border: hsl(17, 24%, 90%);
 
-    --theme-dark: #292f36;
-    --theme-light: #f7fff7;
-    --theme-primary: #b497d6;
-    --theme-secondary: #99e2ff;
-    --theme-ternary: #da3e52;
+    --theme-dark: #0b0c10;
+    --theme-dark-gray: #1f2833;
+    --theme-light-gray: #dad1d2;
+    --theme-light: #f3eded;
+    --theme-primary: #66fcf1;
+    --theme-secondary: #45a29e;
+
+    --footer-gradient: linear-gradient(
+      0deg,
+      var(--theme-dark),
+      var(--theme-dark-gray)
+    );
   }
 
   html {
@@ -51,6 +58,7 @@ const { title } = Astro.props as Props;
     font-size: var(--font-size-base);
     color: var(--color-text);
     background-color: var(--color-bg);
+    scroll-behavior: smooth;
   }
 
   body {
@@ -63,7 +71,9 @@ const { title } = Astro.props as Props;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 0;
-    background-color: #e2c8ff;
+    /* background-color: var(--theme-dark); */
+    background: var(--footer-gradient);
+    color: var(--theme-primary);
   }
 
   #socials {

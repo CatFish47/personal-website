@@ -4,22 +4,22 @@ import DownArrow from "../Icons/DownArrow.astro";
 
 <div id="banner">
   <!-- DVD LOGO THAT CHANGES COLOR WHEN IT BOUNCES :D -->
-  <span id="title">Grant Cheng</span>
+  <span id="title">Grant <span id="alt-color">Cheng</span></span>
   <DownArrow width={48} height={48} color="dark" />
 </div>
 <style>
   :root {
-    /* --banner-gradient: linear-gradient(
+    --banner-gradient: linear-gradient(
       0deg,
-      var(--theme-primary),
-      var(--theme-secondary)
-    ); */
+      var(--theme-dark-gray),
+      var(--theme-dark)
+    );
   }
 
   #banner {
     width: 100vw;
     height: 100vh;
-    background: var(--theme-primary);
+    background: var(--banner-gradient);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +29,6 @@ import DownArrow from "../Icons/DownArrow.astro";
   #title {
     font-size: var(--font-size-xl);
     font-weight: bold;
-    color: var(--theme-dark);
+    color: var(--theme-primary);
   }
 </style>

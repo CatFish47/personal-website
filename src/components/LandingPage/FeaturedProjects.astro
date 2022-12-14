@@ -1,16 +1,33 @@
 ---
-import ProjectCard from "../ProjectsPage/ProjectCard.astro";
+import ProjectCard from "../ProjectsPage/ProjectCard";
 import "./section.css";
 ---
 
 <div class="main-content-alt">
   <span class="section-title">Projects</span>
   <div id="projects">
-    <ProjectCard
-      title="Example Project"
-      body="This is an example project"
-      href="#"
-    />
+    {
+      [
+        <ProjectCard
+          id="p1"
+          title="Example Project"
+          body="This is an example project"
+          client:load
+        />,
+        <ProjectCard
+          id="p2"
+          title="Example Project 2"
+          body="This is an example project"
+          client:load
+        />,
+        <ProjectCard
+          id="p3"
+          title="Example Project 3"
+          body="This is an example project"
+          client:load
+        />,
+      ]
+    }
   </div>
 </div>
 <style>

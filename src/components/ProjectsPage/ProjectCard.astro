@@ -1,46 +1,65 @@
 ---
+import ProjectModal from "./ProjectModal.astro";
+
 export interface Props {
+  id: string;
   title: string;
   body: string;
-  href: string;
 }
 
-const { href, title, body } = Astro.props as Props;
+const { id, title, body } = Astro.props as Props;
 ---
 
-<li class="link-card">
-  <a href={href}>
+<project-card class="project-card" data-id={id}>
+  <div>
     <h2>
       {title}
-      <span>&rarr;</span>
+      <span>&#129109;</span>
     </h2>
     <p>
       {body}
     </p>
-  </a>
-</li>
+  </div>
+  <ProjectModal id={id} />
+</project-card>
+<script>
+  class ProjectCard extends HTMLElement {
+    constructor() {
+      super();
+
+      this.addEventListener("click", () => {
+        const projectModal = this.querySelector(`#${this.dataset.id}`);
+
+        if (!projectModal) return;
+        (projectModal as HTMLElement).style.display = "flex";
+      });
+    }
+  }
+
+  customElements.define("project-card", ProjectCard);
+</script>
 <style>
   :root {
-    --link-gradient: linear-gradient(
+    --project-gradient: linear-gradient(
       45deg,
-      #4f39fa,
-      #da62c4 30%,
+      var(--theme-secondary),
+      var(--theme-primary) 30%,
       var(--color-border) 60%
     );
   }
 
-  .link-card {
+  .project-card {
     list-style: none;
     display: flex;
     padding: 0.15rem;
-    background-image: var(--link-gradient);
+    background-image: var(--project-gradient);
     background-size: 400%;
     border-radius: 0.5rem;
     background-position: 100%;
     transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .link-card > a {
+  .project-card > div {
     width: 100%;
     text-decoration: none;
     line-height: 1.4;
@@ -66,15 +85,11 @@ const { href, title, body } = Astro.props as Props;
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .link-card:is(:hover, :focus-within) {
+  .project-card:is(:hover, :focus-within) {
     background-position: 0;
   }
 
-  .link-card:is(:hover, :focus-within) h2 {
-    color: #4f39fa;
-  }
-
-  .link-card:is(:hover, :focus-within) h2 span {
+  .project-card:is(:hover, :focus-within) h2 span {
     will-change: transform;
     transform: translateX(2px);
   }

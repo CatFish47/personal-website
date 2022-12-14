@@ -1,13 +1,13 @@
 .main-content {
   padding: 2rem 10vw;
-  background-color: var(--theme-light);
+  background-color: var(--theme-light-gray);
   color: var(--theme-dark);
 }
 
 .main-content-alt {
   padding: 2rem 10vw;
-  background-color: var(--theme-dark);
-  color: var(--theme-light);
+  background-color: var(--theme-light);
+  color: var(--theme-dark);
 }
 
 .section-title {
