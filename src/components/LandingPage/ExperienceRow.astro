@@ -1,0 +1,83 @@
+---
+import type { Experience } from "./experiences";
+
+export interface Props {
+  experience: Experience;
+}
+
+const { experience } = Astro.props as Props;
+const { company, link, logo, title, start, end, location, details } =
+  experience;
+
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+const startDate = `${months[start.getMonth()]} ${start.getFullYear()}`;
+const endDate =
+  end === "Present" ? end : `${months[end.getMonth()]} ${end.getFullYear()}`;
+---
+
+<div>
+  <hr />
+  <div class="experience-header">
+    <a href={link} target="_blank" class="experience-logo-box"
+      ><img src={logo} class="experience-logo" />
+    </a>
+    <div class="experience-header-right">
+      <a href={link} target="_blank" class="experience-company"
+        ><span>{company}</span>
+      </a>
+      <span class="experience-dates">{startDate} - {endDate}</span>
+    </div>
+  </div>
+  <div class="experience-body">
+    <span class="experience-title">{title}</span>
+    <ul>
+      {
+        details.map((pt) => {
+          return <li>{pt}</li>;
+        })
+      }
+    </ul>
+  </div>
+</div>
+<style>
+  .experience-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .experience-logo {
+    height: 3rem;
+  }
+
+  .experience-company {
+    color: var(--theme-dark);
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+  }
+
+  .experience-header-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-title {
+    font-size: var(--font-size-base);
+    font-weight: bold;
+  }
+</style>

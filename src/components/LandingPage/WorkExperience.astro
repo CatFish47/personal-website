@@ -1,12 +1,32 @@
 ---
+import ExperienceRow from "./ExperienceRow.astro";
 import "./section.css";
+import { experiences } from "./experiences";
+
+experiences.sort((a, b) => {
+  const { start: aStart, end: aEnd } = a;
+  const { start: bStart, end: bEnd } = b;
+
+  if (aEnd === "Present" && bEnd === "Present")
+    return bStart.getTime() - aStart.getTime();
+  if (aEnd === "Present") return -1;
+  if (bEnd === "Present") return 1;
+
+  if (aEnd.getTime() - bEnd.getTime() === 0)
+    return bStart.getTime() - aStart.getTime();
+
+  return bEnd.getTime() - aEnd.getTime();
+});
 ---
 
 <div class="main-content">
   <span class="section-title">Work Experience</span>
   <div id="experience">
-    <p>Thing 1</p>
-    <p>Thing 2</p>
+    {
+      experiences.map((exp) => {
+        return <ExperienceRow experience={exp} />;
+      })
+    }
   </div>
 </div>
 <style>
