@@ -1,0 +1,16 @@
+---
+import Projects from "../components/ProjectsPage/ProjectsComponent";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Projects">
+  <!-- <div class="header"></div> -->
+  <span id="projects-title">Projects</span>
+  <Projects client:load />
+</Layout>
+<style>
+  #projects-title {
+    font-size: var(--font-size-xl);
+    padding: 1rem;
+  }
+</style>

@@ -1,0 +1,36 @@
+.Main {
+  padding: 1rem;
+}
+
+/* XS devices (portrait phones, below 576px) */
+.Projects {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .Projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .Projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Projects {
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,5 +1,6 @@
 ---
 import type { Experience } from "./experiences";
+import { months } from "../../json/utils";
 
 export interface Props {
   experience: Experience;
@@ -8,21 +9,6 @@ export interface Props {
 const { experience } = Astro.props as Props;
 const { company, link, logo, title, start, end, location, details } =
   experience;
-
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
 
 const startDate = `${months[start.getMonth()]} ${start.getFullYear()}`;
 const endDate =

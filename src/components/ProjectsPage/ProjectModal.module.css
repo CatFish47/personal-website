@@ -45,7 +45,7 @@
   grid-template-columns: 1fr;
   row-gap: 1rem;
   max-height: 50vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .ModalImage img {

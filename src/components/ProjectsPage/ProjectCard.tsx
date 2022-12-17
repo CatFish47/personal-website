@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
       <div onClick={onClickCard}>
         <h2 className={styles.CardTitle}>
           {name}
-          <span>&#129109;</span>
+          {/* <span>&#129109;</span> */}
         </h2>
         <p className={styles.CardBody}>{description}</p>
       </div>

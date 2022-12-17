@@ -2,6 +2,7 @@ import { useStore } from "@nanostores/react";
 import { openModalID } from "../../stores/modalStore";
 import styles from "./ProjectModal.module.css";
 import type { Project } from "./projects";
+import { months } from "../../json/utils";
 
 interface ProjectModalProps {
   id: string;
@@ -29,6 +30,9 @@ const ProjectModal: React.FC<ProjectModalProps> = (props) => {
   const { id, project } = props;
   const { name, details, links, image, when } = project;
   const $openModalID = useStore(openModalID);
+
+  const month = months[when.getMonth()];
+  const year = when.getUTCFullYear();
 
   const handleCloseModal = () => {
     openModalID.set("");
@@ -58,7 +62,7 @@ const ProjectModal: React.FC<ProjectModalProps> = (props) => {
           </div>
           <div className={styles.ModalContent}>
             <p>{details}</p>
-            <p>{when}</p>
+            <p>{`${month} ${year}`}</p>
           </div>
         </div>
         <div className={styles.ModalFooter}>

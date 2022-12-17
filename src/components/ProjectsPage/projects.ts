@@ -9,7 +9,7 @@ export interface Project {
   description: string; // short description
   details: string; // longer details
   image: string;
-  when: string;
+  when: Date;
   links: Link[];
 }
 
@@ -18,7 +18,7 @@ const emptyProject: Project = {
   description: "",
   details: "",
   image: "",
-  when: "",
+  when: new Date(),
   links: [],
 };
 
@@ -30,7 +30,7 @@ export const featuredProjects: Project[] = [
       "Explored with 3 other teammates different model-free reinforcement learning algorithms. Through the use of Open AI Gym's custom car racing library, we trained various reinforcement learning algorithms to control a car to drive through a racetrack by taking images of each frame and using the pixels of the image as an input to determine the car's next move.",
     image:
       "https://github.com/acmucsd-projects/KachowRL/blob/main/gifs/ppo_results.gif?raw=true",
-    when: "Winter 2022",
+    when: new Date(2022, 0),
     links: [
       {
         text: "View",
@@ -44,8 +44,8 @@ export const featuredProjects: Project[] = [
     description: "Using the genetic algorithm to play arcade games",
     details:
       "To dive into the basics of machine learning, my partner and I explored how the genetic algorithm worked and applied it to play a game of snake. The end result was a battle-royale-style snake game, each one using a genetic-algorithm-trained neural network to fight to the death. To show that we could apply what we learned to not just snake, we also trained a neural network to play the arcade game Atari Breakout as well.",
-    image: "/portrait-square.jpg",
-    when: "Summer 2021",
+    image: "/projects/snake.png",
+    when: new Date(2021, 8),
     links: [
       {
         text: "Snake",
@@ -64,8 +64,8 @@ export const featuredProjects: Project[] = [
     description: "A personal website built using Astro",
     details:
       "Motivated from both a need for a personal website and a desire to learn the web framework Astro, I built a website entirely with Astro (with the exception of the occasional React components).",
-    image: "/portrait-square.jpg",
-    when: "December 2022",
+    image: "/projects/personalwebsite.png",
+    when: new Date(2022, 11),
     links: [
       {
         text: "View",
@@ -78,6 +78,50 @@ export const featuredProjects: Project[] = [
       },
     ],
   },
+  {
+    name: "SamBamViz VIZualiser",
+    description: "A web app to visualize Covid-19 genome sequences",
+    details:
+      "For a research project in NiemaLab, I worked on SamBamViz Visualizer with a partner to create a webapp that would take in a tsv file from Professor Moshiri's SamBamViz tool alongside an optional reference FASTA file and would generate an interactable bar graph that would visualize the data. Customizability options for color, y-axis, and range were included to make it as friendly as possible for all users.",
+    image: "/projects/sambamvizvis.png",
+    when: new Date(2022, 4),
+    links: [
+      {
+        text: "View",
+        type: "github",
+        url: "https://github.com/CatFish47/NiemaLabGraphSite",
+      },
+      { text: "Demo", url: "https://niema.net/SamBamViz/" },
+    ],
+  },
 ];
 
-export const projects: Project[] = [...featuredProjects];
+export const projects: Project[] = [
+  ...featuredProjects,
+
+  {
+    name: "EMPress Optmization",
+    description: "Compressing data in EMPress to load larger trees",
+    details: "",
+    image: "",
+    when: new Date(),
+    links: [],
+  },
+  {
+    name: "Gamernation",
+    description: "",
+    details: "",
+    image: "",
+    when: new Date(),
+    links: [],
+  },
+  {
+    name: "Qiita Plugins",
+    description:
+      "Plugins for Qiita to make a Covid-19 genome analysis pipeline",
+    details: "",
+    image: "",
+    when: new Date(),
+    links: [],
+  },
+];
