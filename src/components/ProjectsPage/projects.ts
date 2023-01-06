@@ -1,3 +1,8 @@
+import { monthsCode } from "../../json/utils";
+
+const { JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC } =
+  monthsCode;
+
 export interface Link {
   text: string;
   type?: "github" | "demo";
@@ -30,7 +35,7 @@ export const featuredProjects: Project[] = [
       "Explored with 3 other teammates different model-free reinforcement learning algorithms. Through the use of Open AI Gym's custom car racing library, we trained various reinforcement learning algorithms to control a car to drive through a racetrack by taking images of each frame and using the pixels of the image as an input to determine the car's next move.",
     image:
       "https://github.com/acmucsd-projects/KachowRL/blob/main/gifs/ppo_results.gif?raw=true",
-    when: new Date(2022, 0),
+    when: new Date(2022, JAN),
     links: [
       {
         text: "View",
@@ -45,7 +50,7 @@ export const featuredProjects: Project[] = [
     details:
       "To dive into the basics of machine learning, my partner and I explored how the genetic algorithm worked and applied it to play a game of snake. The end result was a battle-royale-style snake game, each one using a genetic-algorithm-trained neural network to fight to the death. To show that we could apply what we learned to not just snake, we also trained a neural network to play the arcade game Atari Breakout as well.",
     image: "/projects/snake.png",
-    when: new Date(2021, 8),
+    when: new Date(2021, SEP),
     links: [
       {
         text: "Snake",
@@ -65,7 +70,7 @@ export const featuredProjects: Project[] = [
     details:
       "Motivated from both a need for a personal website and a desire to learn the web framework Astro, I built a website entirely with Astro (with the exception of the occasional React components).",
     image: "/projects/personalwebsite.png",
-    when: new Date(2022, 11),
+    when: new Date(2022, DEC),
     links: [
       {
         text: "View",
@@ -84,7 +89,7 @@ export const featuredProjects: Project[] = [
     details:
       "For a research project in NiemaLab, I worked on SamBamViz Visualizer with a partner to create a webapp that would take in a tsv file from Professor Moshiri's SamBamViz tool alongside an optional reference FASTA file and would generate an interactable bar graph that would visualize the data. Customizability options for color, y-axis, and range were included to make it as friendly as possible for all users.",
     image: "/projects/sambamvizvis.png",
-    when: new Date(2022, 4),
+    when: new Date(2022, MAY),
     links: [
       {
         text: "View",

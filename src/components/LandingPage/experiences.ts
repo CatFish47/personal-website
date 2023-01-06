@@ -1,3 +1,8 @@
+import { monthsCode } from "../../json/utils";
+
+const { JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC } =
+  monthsCode;
+
 export interface Experience {
   company: string;
   link: string;
@@ -14,8 +19,8 @@ export const experiences: Experience[] = [
     company: "Cisco",
     link: "https://www.cisco.com/",
     logo: "/experiences/cisco.png",
-    start: new Date(2020, 7),
-    end: new Date(2020, 8),
+    start: new Date(2020, JUL),
+    end: new Date(2020, AUG),
     title: "Job Shadow Student",
     details: [
       "Worked by myself and under mentorship of a senior software engineer to develop a web application using vanilla HTML, JS, and CSS to parse internet headers",
@@ -28,8 +33,8 @@ export const experiences: Experience[] = [
     company: "Qoom",
     link: "https://www.qoom.io/",
     logo: "/experiences/qoom.png",
-    start: new Date(2019, 9),
-    end: new Date(2020, 11),
+    start: new Date(2019, SEP),
+    end: new Date(2020, NOV),
     title: "Intern",
     details: [
       "Qoom is a startup company creating a web application that allowed for easy frontend and backend coding aimed towards enabling a hassle-free software development experience",
@@ -41,8 +46,8 @@ export const experiences: Experience[] = [
     company: "UC San Diego Computer Science and Engineering",
     link: "http://spis.ucsd.edu/",
     logo: "/experiences/SPIS.jpg",
-    start: new Date(2022, 7),
-    end: new Date(2022, 9),
+    start: new Date(2022, JUL),
+    end: new Date(2022, SEP),
     title: "SPIS Mentor",
     details: [
       "The Summer Program for Incoming Students (SPIS) is a summer program for freshmen interested in getting a head start in computer science at UCSD.",
@@ -55,8 +60,8 @@ export const experiences: Experience[] = [
     company: "PhantaSpace",
     link: "https://phanta.space/",
     logo: "/experiences/phantaspace.jfif",
-    start: new Date(2022, 7),
-    end: new Date(2022, 9),
+    start: new Date(2022, JUL),
+    end: new Date(2022, SEP),
     title: "Web3 Development Intern",
     details: [
       "PhantaSpace is a startup that layers the metaverse on top of the real world, introducing ways for artists and brands to make NFT galleries and games in mixed reality",
@@ -69,7 +74,7 @@ export const experiences: Experience[] = [
     company: "NiemaLab at UCSD",
     link: "https://niema.net/",
     logo: "/experiences/niema.png",
-    start: new Date(2021, 9),
+    start: new Date(2021, SEP),
     end: "Present",
     title: "Undergraduate Researcher",
     details: [
@@ -84,7 +89,7 @@ export const experiences: Experience[] = [
     company: "Applied Computing Foundation",
     link: "https://www.applied-computing.org/",
     logo: "/experiences/acf.jpg",
-    start: new Date(2020, 9),
+    start: new Date(2020, SEP),
     end: "Present",
     title: "Fullstack Developer",
     details: [
@@ -97,7 +102,7 @@ export const experiences: Experience[] = [
     company: "ACM at UCSD",
     link: "https://acmucsd.com/",
     logo: "/experiences/acm.png",
-    start: new Date(2022, 5),
+    start: new Date(2022, MAY),
     end: "Present",
     title: "AI Board - Developer",
     details: [
