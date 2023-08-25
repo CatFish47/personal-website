@@ -99,6 +99,36 @@ export const featuredProjects: Project[] = [
       { text: "Demo", url: "https://niema.net/SamBamViz/" },
     ],
   },
+  {
+    name: "Interacting LLMs play Wikirace",
+    description: "An experiment testing if LLMs can collaborate to perform better.",
+    details:
+      "For my AI research internship at CrossLabs, I created an experiment that tested various methods for large language models (LLMs) to play Wikirace, a game where you get from one Wikipedia page to another by clicking only the links on the current page. 4 methods of interacting LLMs were tested against a singular LLm and a traditional graph-search algorithm to see how well it worked. In the end, the experiment was a success, and the interacting LLMs proved to be better at completing the task than a singular LLM.",
+    image: "/projects/interacting-llms.png",
+    when: new Date(2023, AUG),
+    links: [
+      {
+        text: "View",
+        type: "github",
+        url: "https://github.com/CatFish47/interacting-llms",
+      },
+    ],
+  },
+  {
+    name: "Tasseography",
+    description: "A website for fortune telling with tea leaves.",
+    details:
+      "For my CSE 110 class on software engineering, we were put in groups of 10 people to create a fortune telling app. I designed and drew half of the assets, wrote most of the CI/CD, wrote unit and end-to-end tests, helped format the CSS, and streamlined the app to be a single-page application for a smoother result.",
+    image: "/projects/tasseography.png",
+    when: new Date(2023, MAY),
+    links: [
+      {
+        text: "View",
+        type: "github",
+        url: "https://github.com/cse110-sp23-group18/cse110-sp23-group18",
+      },
+    ],
+  },
 ];
 
 export const projects: Project[] = [

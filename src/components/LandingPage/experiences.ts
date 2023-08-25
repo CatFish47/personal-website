@@ -75,7 +75,7 @@ export const experiences: Experience[] = [
     link: "https://niema.net/",
     logo: "/experiences/niema.png",
     start: new Date(2021, SEP),
-    end: "Present",
+    end: new Date(2023, MAR),
     title: "Undergraduate Researcher",
     details: [
       "Work with Professor Niema Moshiri on various web application projects",
@@ -108,6 +108,19 @@ export const experiences: Experience[] = [
     details: [
       "Part of the board for ACM at UCSD's AI community as a developer",
       "Work on frontend for various projects such as the website in preparation for an AI competition that ACM AI will host in winter quarter of 2023",
+    ],
+  },
+  {
+    company: "CrossLabs",
+    link: "https://www.crosslabs.org/",
+    logo: "/experiences/crosslabs.jpg",
+    start: new Date(2023, JUN),
+    end: "Present",
+    title: "AI Research Intern",
+    details: [
+      "Experimented with the collaboration of multiple large language models (LLMs) to compare how well they can perform a task in comparison to a singular LLM.",
+      "Wrote a preliminary paper report on my findings for the experiment on interacting LLMs",
+      "Assisted on another intern's project to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions."
     ],
   },
 ];
