@@ -1,10 +1,12 @@
 ---
 import DownArrow from "../Icons/DownArrow.astro";
+import Socials from "../Socials/Socials.astro"
 ---
 
 <div id="banner">
   <!-- DVD LOGO THAT CHANGES COLOR WHEN IT BOUNCES :D -->
   <span id="title">Grant <span id="alt-color">Cheng</span></span>
+  <Socials />
   <DownArrow width={48} height={48} color="dark" />
 </div>
 <style>
@@ -24,6 +26,7 @@ import DownArrow from "../Icons/DownArrow.astro";
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
 
   #title {
