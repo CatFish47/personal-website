@@ -90,7 +90,7 @@ export const experiences: Experience[] = [
     link: "https://www.applied-computing.org/",
     logo: "/experiences/acf.jpg",
     start: new Date(2020, SEP),
-    end: "Present",
+    end: new Date(2023, JAN),
     title: "Fullstack Developer",
     details: [
       "Applied Computing Foundation (ACF) is a non-profit organization that aims to teach students how to code in a fun way from an early age",
