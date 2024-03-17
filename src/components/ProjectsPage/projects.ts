@@ -34,7 +34,7 @@ export const featuredProjects: Project[] = [
     details:
       "Explored with 3 other teammates different model-free reinforcement learning algorithms. Through the use of Open AI Gym's custom car racing library, we trained various reinforcement learning algorithms to control a car to drive through a racetrack by taking images of each frame and using the pixels of the image as an input to determine the car's next move.",
     image:
-      "https://github.com/acmucsd-projects/KachowRL/blob/main/gifs/ppo_results.gif?raw=true",
+      "/projects/ppo_results.gif",
     when: new Date(2022, JAN),
     links: [
       {

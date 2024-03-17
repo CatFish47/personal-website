@@ -1,0 +1,53 @@
+---
+export interface Props {
+  pt: string;
+}
+
+const { pt } = Astro.props as Props;
+
+const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+const match = [...pt.matchAll(linkRegex)];
+
+let lastPart = "";
+
+if (match.length == 0) {
+  lastPart = pt;
+} else {
+  let lastMatch = match[match.length - 1];
+  let lastInd = lastMatch.index;
+  lastPart = pt.substring(lastInd ? lastInd + lastMatch[0].length : 0);
+}
+---
+
+{
+  match.map((m, i, arr) => {
+    if (!m.index) {
+      return;
+    }
+
+    let start = 0;
+    let prevMatch = arr[i - 1];
+
+    if (i > 0 && prevMatch.index) {
+      start = prevMatch.index + arr[i - 1][0].length;
+    }
+
+    let res = (
+      <>
+        <span>{pt.substring(start, m.index)}</span>
+        <a class="pt-link" href={m[2]}>
+          {m[1]}
+        </a>
+      </>
+    );
+
+    return res;
+  })
+}
+<span>{lastPart}</span>
+<style>
+  .pt-link {
+    color: var(--theme-ternary);
+    text-decoration: none;
+  }
+</style>

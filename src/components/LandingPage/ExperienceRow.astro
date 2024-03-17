@@ -1,6 +1,7 @@
 ---
 import type { Experience } from "./experiences";
 import { months } from "../../json/utils";
+import ExperiencePoint from "./ExperiencePoint.astro";
 
 export interface Props {
   experience: Experience;
@@ -32,9 +33,11 @@ const endDate =
     <span class="experience-title">{title}</span>
     <ul>
       {
-        details.map((pt) => {
-          return <li>{pt}</li>;
-        })
+        details.map((pt) => (
+          <li>
+            <ExperiencePoint pt={pt} />
+          </li>
+        ))
       }
     </ul>
   </div>

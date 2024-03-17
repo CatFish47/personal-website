@@ -79,10 +79,10 @@ export const experiences: Experience[] = [
     title: "Undergraduate Researcher",
     details: [
       "Work with Professor Niema Moshiri on various web application projects",
-      "Created a web app to visualize Covid-19 genome sequences (https://niema.net/SamBamViz/) and a python notebook to visualize global Covid-19 data for easy use by epidemiologists and biologists",
-      "Used data compression work on open-source python package known as Empress (https://pypi.org/project/empress/) to allow for large visualizations of 2 million+ nodes",
-      "Implement new plugins for Qiita (https://qiita.ucsd.edu/), a tool to help biologists manipulate and analyze genome sequences with 11k+ users and ~600k jobs ran, to allow Qiita users to work with Covid-19 genome sequences",
-      "Lead a team to write a simplistic and easy-to-use config generation tool for one of Professor Moshiri's framework for viral transmission and evolution simulation (https://github.com/CatFish47/FAVITES-Lite)",
+      "Created a [web app](https://niema.net/SamBamViz/) to visualize Covid-19 genome sequences and a python notebook to visualize global Covid-19 data for easy use by epidemiologists and biologists",
+      "Used data compression work on open-source python package known as [Empress](https://pypi.org/project/empress/) to allow for large visualizations of 2 million+ nodes",
+      "Implement new plugins for [Qiita](https://qiita.ucsd.edu/), a tool to help biologists manipulate and analyze genome sequences with 11k+ users and ~600k jobs ran, to allow Qiita users to work with Covid-19 genome sequences",
+      "Lead a team to write a simplistic and easy-to-use [config generation tool](https://github.com/CatFish47/FAVITES-Lite) for one of Professor Moshiri's framework for viral transmission and evolution simulation",
     ],
   },
   {
@@ -94,20 +94,8 @@ export const experiences: Experience[] = [
     title: "Fullstack Developer",
     details: [
       "Applied Computing Foundation (ACF) is a non-profit organization that aims to teach students how to code in a fun way from an early age",
-      "Design and develop a MERN stack for ACF students to share the games that they make as a team (https://gamernation.applied-computing.org/)",
-      "Also taught a group of high schoolers how to code, leading them to design a fully-functional chess app from scratch with focuses on environmental concerns (https://github.com/notme10/Ecochess)",
-    ],
-  },
-  {
-    company: "ACM at UCSD",
-    link: "https://acmucsd.com/",
-    logo: "/experiences/acm.png",
-    start: new Date(2022, MAY),
-    end: "Present",
-    title: "AI Board - Developer",
-    details: [
-      "Part of the board for ACM at UCSD's AI community as a developer",
-      "Work on frontend for various projects such as the website in preparation for an AI competition that ACM AI will host in winter quarter of 2023",
+      "Design and develop a MERN-stack [website](https://gamernation.applied-computing.org/) for ACF students to share the games that they make as a team",
+      "Also taught a group of high schoolers how to code, leading them to design a [fully-functional chess app](https://github.com/notme10/Ecochess) from scratch with focuses on environmental concerns",
     ],
   },
   {
@@ -119,8 +107,22 @@ export const experiences: Experience[] = [
     title: "AI Research Intern",
     details: [
       "Experimented with the collaboration of multiple large language models (LLMs) to compare how well they can perform a task in comparison to a singular LLM.",
-      "Wrote a preliminary paper report on my findings for the experiment on interacting LLMs",
+      "Wrote a progress report blog on my findings for the experiment on interacting LLMs that was posted on the [CrossLabs website](https://www.crosslabs.org/blog/unlocking-the-power-of-multiple-language-models-a-dive-into-collaborative-ai)",
+      "Detailed all experiments and findings in a research paper that was accepted into, published, and presented at the 2024 International Conference for Semantic Computing",
       "Assisted on another intern's project to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions."
+    ],
+  },
+  {
+    company: "Qualcomm Institute",
+    link: "https://qi.ucsd.edu/",
+    logo: "/experiences/qi.png",
+    start: new Date(2024, JAN),
+    end: "Present",
+    title: "Student Researcher",
+    details: [
+      "Working on the [CyberArchWarehouse project](https://cyberarch.pages.nrp-nautilus.io/cyberarchweb/) under Neil Smith",
+      "Researching methods to convert historical figures to characters in the virtual world using AI models",
+      "Specifically, looking into ways to use machine learning models to convert audio into 3D facial expressions and body gestures that will be exported to Unreal Engine 5"
     ],
   },
 ];
