@@ -99,7 +99,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    company: "CrossLabs",
+    company: "Cross Labs",
     link: "https://www.crosslabs.org/",
     logo: "/experiences/crosslabs.jpg",
     start: new Date(2023, JUN),
@@ -108,8 +108,8 @@ export const experiences: Experience[] = [
     details: [
       "Experimented with the collaboration of multiple large language models (LLMs) to compare how well they can perform a task in comparison to a singular LLM.",
       "Wrote a progress report blog on my findings for the experiment on interacting LLMs that was posted on the [CrossLabs website](https://www.crosslabs.org/blog/unlocking-the-power-of-multiple-language-models-a-dive-into-collaborative-ai)",
-      "Detailed all experiments and findings in a research paper that was accepted into, published, and presented at the 2024 International Conference for Semantic Computing",
-      "Assisted on another intern's project to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions."
+      "Detailed all experiments and findings in a [research paper](https://ieeexplore.ieee.org/document/10475609) that was accepted into, published, and presented at the [2024 International Conference for Semantic Computing](https://www.ieee-icsc.org/)",
+      "Assisted on another intern's [project](https://github.com/burnttomato/CrossLabsCookingRobot) to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions."
     ],
   },
   {
