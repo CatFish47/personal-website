@@ -103,13 +103,13 @@ export const experiences: Experience[] = [
     link: "https://www.crosslabs.org/",
     logo: "/experiences/crosslabs.jpg",
     start: new Date(2023, JUN),
-    end: "Present",
+    end: new Date(2023, AUG),
     title: "AI Research Intern",
     details: [
       "Experimented with the collaboration of multiple large language models (LLMs) to compare how well they can perform a task in comparison to a singular LLM.",
       "Wrote a progress report blog on my findings for the experiment on interacting LLMs that was posted on the [CrossLabs website](https://www.crosslabs.org/blog/unlocking-the-power-of-multiple-language-models-a-dive-into-collaborative-ai)",
       "Detailed all experiments and findings in a [research paper](https://ieeexplore.ieee.org/document/10475609) that was accepted into, published, and presented at the [2024 International Conference for Semantic Computing](https://www.ieee-icsc.org/)",
-      "Assisted on another intern's [project](https://github.com/burnttomato/CrossLabsCookingRobot) to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions."
+      "Assisted on another intern's [project](https://github.com/burnttomato/CrossLabsCookingRobot) to utilize LLMs to translate human-readable cocktail recipes into machine code with the ultimate goal of having a robot read the code and recreate the recipe based off of its instructions.",
     ],
   },
   {
@@ -117,12 +117,25 @@ export const experiences: Experience[] = [
     link: "https://qi.ucsd.edu/",
     logo: "/experiences/qi.png",
     start: new Date(2024, JAN),
-    end: "Present",
+    end: new Date(2024, JUN),
     title: "Student Researcher",
     details: [
       "Working on the [CyberArchWarehouse project](https://cyberarch.pages.nrp-nautilus.io/cyberarchweb/) under Neil Smith",
       "Researching methods to convert historical figures to characters in the virtual world using AI models",
-      "Specifically, looking into ways to use machine learning models to convert audio into 3D facial expressions and body gestures that will be exported to Unreal Engine 5"
+      "Specifically, looking into ways to use machine learning models to convert audio into 3D facial expressions and body gestures that will be exported to Unreal Engine 5",
+    ],
+  },
+  {
+    company: "Wisk",
+    link: "https://wisk.aero/",
+    logo: "/experiences/wisk.png",
+    start: new Date(2024, JUN),
+    end: "Present",
+    title: "Simulation Software Engineer Intern",
+    details: [
+      "Resurrected and upgraded a terrain server for company-wide use. Optimized server to be deployed to and used from the cloud.",
+      "Seamlessly integrated terrain server to flight-route planning tool by graphing elevations and altitudes along a trajectory. Communicated with flight test team to ensure that the tools being developed fit their needs.",
+      "Updated an old tool that does first-person fly-through of flight routes by deploying it to the cloud, updating UI, and making flight routes shareable.",
     ],
   },
 ];
