@@ -133,9 +133,9 @@ export const experiences: Experience[] = [
     end: "Present",
     title: "Simulation Software Engineer Intern",
     details: [
-      "Resurrected and upgraded a terrain server for company-wide use. Optimized server to be deployed to and used from the cloud.",
-      "Seamlessly integrated terrain server to flight-route planning tool by graphing elevations and altitudes along a trajectory. Communicated with flight test team to ensure that the tools being developed fit their needs.",
-      "Updated an old tool that does first-person fly-through of flight routes by deploying it to the cloud, updating UI, and making flight routes shareable.",
+      "Developed a terrain server which was utilized company-wide. Optimized server and usage or GeoTIFF files to be deployed to and used from the cloud. Iterated the design of the server to boost performance by reducing memory usage from over 100% to 11% and cold startup time from over 50 seconds to just 10 seconds.",
+      "Seamlessly integrated terrain server to flight-route planning tool by graphing elevations and altitudes along a trajectory. Worked cross-functionally to ensure that tool met requirements.",
+      "Rearchitected legacy tool to fit company needs by producing a first-person fly-through of routes. Deployed to Google Cloud Products via Terraform.",
     ],
   },
 ];
